@@ -1,0 +1,17 @@
+{
+    "name": "trillo",
+    "version": "1.0.0",
+    "description": "trillo app",
+    "main": "index.js",
+    "scripts": {    
+      "watch:sass": "node-sass sass/main.scss css/style.css -w",
+  
+      "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+      "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
+      "build:css": "npm-run-all compile:sass compress:css"     
+  
+    },
+    "author": "Odi KD",
+    "license": "ISC"
+  }
+  
