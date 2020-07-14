@@ -1,5 +1,23 @@
 :root {
+  --color-basic-blue: #1861d6;
+  --color-gray-light: #f7f7f7;
   --color-gray-dark: #777; }
+
+@keyframes moveInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  from {
+    opacity: 0;
+    transform: translateX(3rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
 
 *,
 *::after,
@@ -12,9 +30,83 @@ html {
   font-size: 62.5%; }
 
 body {
-  padding: 3rem;
+  padding: 3rem 10rem;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-gray-dark); }
+
+.header {
+  background-color: var(--color-gray-light);
+  height: 35vh;
+  padding: 5rem 5rem;
+  border-radius: 3px 3px 0 0; }
+  .header__img {
+    height: 15%; }
+
+.sub__color-range-box {
+  height: 4rem;
+  background-image: linear-gradient(to right, rgba(207, 165, 29, 0.9) 0%, rgba(207, 165, 29, 0.9) 12%, #c2bfb4 12%, #c2bfb4 30%, rgba(207, 165, 29, 0.9) 30%, rgba(207, 165, 29, 0.9) 42%, #cc6731 42%, #cc6731 54%, #c2bfb4 54%, #c2bfb4 66%, #8f154a 66%, #8f154a 74.5%, #6d1075 74.5%, #6d1075 83%, #3ac95c 83%, #3ac95c 91.5%, var(--color-basic-blue) 91.5%, var(--color-basic-blue) 100%); }
+
+.section-info {
+  padding: 10rem 5rem;
+  background-color: var(--color-gray-light); }
+
+.heading-primary {
+  text-align: text-center; }
+  .heading-primary--main {
+    color: var(--color-basic-blue);
+    display: block;
+    font-size: 12rem;
+    letter-spacing: .4rem;
+    animation: moveInLeft .4s ease-in-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: .6rem;
+    font-weight: 300;
+    animation: moveInBottom .4s ease-in-out; }
+
+.heading-secondary {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--color-basic-blue);
+  margin-bottom: 5rem; }
+
+.info__text {
+  font-size: 1.4rem;
+  column-count: 2;
+  column-gap: 3rem; }
+
+.info__images-container {
+  height: 20rem;
+  margin-bottom: 4rem; }
+
+.info__images {
+  position: relative; }
+
+.info__img {
+  display: block;
+  position: absolute;
+  width: 30%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  .info__img--1 {
+    top: 0;
+    left: -10rem;
+    transform: rotate(10deg);
+    z-index: 10; }
+  .info__img--2 {
+    top: 1rem;
+    left: 17rem;
+    transform: rotate(-5deg);
+    z-index: 5; }
+  .info__img--3 {
+    top: 0;
+    left: 46rem;
+    transform: rotate(5deg);
+    z-index: 3; }
+  .info__img--4 {
+    top: 0;
+    left: 78rem;
+    transform: rotate(-2deg); }
