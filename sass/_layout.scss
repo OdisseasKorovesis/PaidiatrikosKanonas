@@ -1,7 +1,6 @@
  .header {
     background-color: var(--color-gray-light);
-    height: 35vh;
-    padding:5rem 5rem;
+    padding: 5rem 5rem;
     border-radius: 3px 3px 0 0;
 
     &__img {
@@ -12,8 +11,15 @@
 .sub {
 
     &__color-range-box {
-        height: 4rem;
-        @include solid-color-gradient;
+
+        height: 3rem;
+        background-color: var(--color-basic-blue);
+
+        @media screen and (min-width: 1000px) {
+            height: 4rem;
+            @include solid-color-gradient;
+        }        
+        
     }
 }
 

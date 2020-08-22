@@ -111,12 +111,6 @@ body {
   color: var(--color-basic-blue);
   margin-bottom: 10rem; }
 
-.heading-tertiary {
-  color: var(--color-gray-dark);
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 1rem; }
-
 @media screen and (max-width: 1300px) {
   .info__text-box {
     margin-top: 3rem; } }
@@ -131,6 +125,7 @@ body {
 
 .info__text {
   font-size: 1.4rem;
+  column-count: 2;
   column-gap: 3rem; }
   @media screen and (max-width: 1000px) {
     .info__text {
@@ -138,7 +133,6 @@ body {
 
 .info__images-container {
   height: 20rem;
-  width: 10rem;
   margin-bottom: 4rem; }
 
 .info__images {
