@@ -370,6 +370,27 @@ body {
   z-index: -1;
   transition: all .4s; }
 
+.btn-top, .btn-top:link, .btn-top:visited, .btn-top:not([href]) {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--color-basic-blue);
+  color: white;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  transition: all .2s; }
+
+.btn-top:hover, .btn-top:not([href]):hover {
+  color: white;
+  font-size: 1.5rem; }
+
 .footer {
   font-size: 1.6rem; }
   .footer__container {
