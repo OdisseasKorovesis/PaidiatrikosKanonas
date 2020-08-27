@@ -56,6 +56,8 @@ body {
   border-radius: 3px 3px 0 0; }
   .header__image-box {
     padding: 0; }
+  .header__img {
+    width: 75%; }
 
 .sub__color-range-box {
   height: 3rem; }
@@ -88,7 +90,9 @@ body {
   animation: moveInLeft .4s ease-in-out; }
   @media screen and (max-width: 600px) {
     .heading-primary--main {
-      font-size: 9rem;
+      font-size: 9rem; } }
+  @media screen and (max-width: 768px) {
+    .heading-primary--main {
       text-align: center; } }
 
 .heading-primary--sub {
@@ -99,15 +103,23 @@ body {
   animation: moveInBottom .4s ease-in-out; }
   @media screen and (max-width: 600px) {
     .heading-primary--sub {
-      font-size: 3rem;
+      font-size: 3rem; } }
+  @media screen and (max-width: 700px) {
+    .heading-primary--sub {
+      font-size: 4rem; } }
+  @media screen and (max-width: 768px) {
+    .heading-primary--sub {
       text-align: center; } }
 
 .heading-secondary {
   display: inline-block;
   font-size: 5rem;
   font-weight: 400;
-  color: var(--color-basic-blue);
-  margin-bottom: 10rem; }
+  color: var(--color-basic-blue); }
+  .heading-secondary--margin-small {
+    margin-bottom: 5rem; }
+  .heading-secondary--margin-large {
+    margin-bottom: 10rem; }
 
 .heading-tertiary {
   color: var(--color-gray-dark);
@@ -228,17 +240,14 @@ body {
     transform: translateY(-2rem) scale(1.1); }
 
 .creators__img-box {
-  border: 1px solid var(--color-gray-dark);
   height: 20rem;
   width: 20rem;
-  border-radius: 50%;
   overflow: hidden;
   margin-bottom: 2rem; }
 
 .creators__img {
   height: 100%;
-  width: auto;
-  transform: translateX(-4rem); }
+  width: auto; }
 
 .creators__title {
   font-size: 2rem;
@@ -405,3 +414,96 @@ body {
     display: inline-block;
     transform: translateX(0.5rem);
     border-bottom: 1px solid #fff; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  @supports (-moz-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      backdrop-filter: blur(10px);
+      -moz-backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    display: table;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+  .popup__left {
+    width: 33.3333333%;
+    display: table-cell;
+    position: relative; }
+    @media only screen and (max-width: 75em) {
+      .popup__left {
+        display: table-row;
+        text-align: center; } }
+  .popup__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+    @media only screen and (max-width: 75em) {
+      .popup__right {
+        display: table-row;
+        text-align: center; } }
+  .popup__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 80%; }
+    @media only screen and (max-width: 75em) {
+      .popup__img {
+        position: relative;
+        width: 30%;
+        display: inline;
+        transform: translate(0, 0);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; } }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: var(--color-gray-light);
+    hyphens: auto; }
+    @media only screen and (max-width: 75em) {
+      .popup__text {
+        column-count: 1;
+        padding: 1rem 5rem; } }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: var(--color-gray-dark);
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1; }
+  .popup__close:hover {
+    color: var(--color-basic-blue); }

@@ -20,13 +20,13 @@
 <body>
 
     <header class="header">
-        <div class="row header__content-box align-items-center">
-            <img class="header__img col-2" src="/img/kanonas_logo.png" alt="Logo">
-            <div class="header__text-box col-9">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Κανόνας</span>
-                    <span class="heading-primary--sub">για παιδιατρικά επείγοντα</span>
-                </h1>
+        <div class="row header__content-box align-items-center justify-content-center ">
+            <img class="header__img col-4 col-md-2" src="/img/kanonas_logo.png" alt="Logo">
+            <div class="header__text-box col-12 col-md-9">
+                
+                    <h1 class="heading-primary--main">Κανόνας</span>
+                    <h2 class="heading-primary--sub">για παιδιατρικά επείγοντα</span>
+                
             </div>
         </div>
     </header>
@@ -39,7 +39,7 @@
     <main>
         <section class="section-info mt-3">
             <div class="text-center">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary heading-secondary--margin-small">
                     Τι είναι ο παιδιατρικός κανόνας;
                 </h2>
             </div>
@@ -114,14 +114,14 @@
 
         <section class="section-creators mt-3">
             <div class="text-center">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary heading-secondary--margin-large">
                     Σχετικά με εμάς
                 </h2>
             </div>
             <div class="creators row d-flex justify-content-around">
                 <div class="col-8 col-lg-3 mb-4 mb-lg-0 creators__box d-flex flex-column align-items-center">
                     <div class="creators__img-box">
-                        <img class="creators__img" src="/img/patsoura-placeholder.jpg" alt="">
+                        <img class="creators__img" src="/img/patsoura-placeholder.png" alt="">
                     </div>
                     <h3 class="creators__title">Α. Πατσούρα</h3>
                     <p class="creators__text">
@@ -133,19 +133,19 @@
                 </div>
                 <div class="col-8 col-lg-3 mb-4 mb-lg-0 creators__box d-flex flex-column align-items-center">
                     <div class="creators__img-box">
-                        <img class="creators__img" src="/img/mitropoulou-placeholder.jpg" alt="">
+                        <img class="creators__img" src="/img/patsoura-placeholder.png" alt="">
                     </div>
                     <h3 class="creators__title">Κ. Μητροπούλου</h3>
                     <p class="creators__text">
                         Παιδίατρος- Εντατικολόγος
                     </p>
                     <p class="text-muted font-italic">Επιμέλεια Ελληνικής Έκδοσης</p>
-                    <a class="creators__button" href="#">Μάθετε περισσότερα &rarr;</a>
+                    <a class="creators__button" href="#popup">Μάθετε περισσότερα &rarr;</a>
 
                 </div>
                 <div class="col-8 col-lg-3 mb-4 mb-lg-0 creators__box d-flex flex-column align-items-center">
                     <div class="creators__img-box">
-                        <img class="creators__img" src="/img/kaufmann.png" alt="">
+                        <img class="creators__img" src="/img/patsoura-placeholder.png" alt="">
                     </div>
                     <h3 class="creators__title--long">Herr Priv.-Doz. Dr. J. Kaufmann</h3>
                     <p class="creators__text">
@@ -159,7 +159,7 @@
 
         <section class="section-contact mt-3">
             <div class="text-center">
-                <h2 class="heading-secondary mb-5">
+                <h2 class="heading-secondary heading-secondary--margin-large mb-5">
                     Επικοινωνήστε μαζί μας!
                 </h2>
             </div>
@@ -195,9 +195,9 @@
     <footer class="pt-4 footer">
 
         <div class="container-fluid text-center text-md-left footer__container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6 mt-md-0 mt-3 footer_text-box row justify-content-center">
-                    <h5 class="footer__title col-8 ">Lorem Ipsum</h5>
+                    <h5 class="footer__title col-8">Lorem Ipsum</h5>
                     <p class="footer__text col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam
                         rem!
                         Deserunt molestiae, minima modi minus aliquid eaque sed voluptates laboriosam cum cupiditate
@@ -250,6 +250,28 @@
         </div>
 
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/patsoura-placeholder.png" alt="Doctor's Photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#" class="popup__close">&times;</a>
+                <h2 class="heading-secondary">Άρη Πατσουρά</h2>
+                <h3 class="heading-tertiary">Παιδίατρος- Εντατικολόγος</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nihil
+                    maiores corrupti magnam cupiditate eum, quasi commodi itaque vitae illo, doloribus eaque dolore.
+                    Mollitia cumque vero quos optio. Rem quod odit dolorum eius, eos dolor eaque laboriosam tenetur.
+                    Harum, autem totam! Modi, atque iste. Nihil sapiente quos animi praesentium dolor? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Aperiam delectus maiores necessitatibus suscipit esse
+                    incidunt nihil quidem perferendis, ratione tenetur deleniti itaque consectetur aspernatur sunt
+                    quasi? Maiores deleniti nisi officia. Recusandae mollitia architecto, eius veniam in exercitationem
+                    accusamus animi neque! Sint, nesciunt impedit, sapiente in at numquam natus aut minus provident sit
+                    vero voluptate! Inventore quaerat natus molestias iste aliquam?</p>                
+            </div>
+        </div>
+    </div>
 
 
 
