@@ -528,3 +528,20 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: var(--color-basic-blue); }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none; }
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 5rem;
+  color: black; }
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 5rem;
+  color: black; }
