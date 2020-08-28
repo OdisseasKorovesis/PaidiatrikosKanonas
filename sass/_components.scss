@@ -5,7 +5,8 @@
         color: var(--color-basic-blue);
         display: block;
         font-size: 12rem;
-        letter-spacing: .4rem;
+        letter-spacing: .2rem;
+        font-weight: 700;
 
         animation: moveInLeft .4s ease-in-out;
 
@@ -21,10 +22,11 @@
     }
 
     &--sub {
+        color: var(--color-basic-blue);
         display: block;
         font-size: 5rem;
-        letter-spacing: .6rem;
-        font-weight: 300;
+        letter-spacing: .4rem;
+        font-weight: 600;
 
         animation: moveInBottom .4s ease-in-out;
 
@@ -640,13 +642,28 @@
         }
     }
 
+.carousel-control-next {
+    right: -10rem;
+
+    @media screen and (max-width: 768px) {
+        display: none;  
+    }
+}
+
+.carousel-control-prev {
+    left: -10rem;
+
+    @media screen and (max-width: 768px) {
+       display: none;        
+    }
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;  
   background-size: 100%, 100%;  
   background-image: none;
-
 }
 
 .carousel-control-prev-icon:after {
