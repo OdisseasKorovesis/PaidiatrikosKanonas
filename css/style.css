@@ -66,7 +66,8 @@ body {
     width: 75%; }
 
 .sub__color-range-box {
-  height: 3rem; }
+  height: 3rem;
+  margin-bottom: -1.5rem; }
 
 .sub__color-range-img {
   width: 100%; }
@@ -91,9 +92,10 @@ body {
 .heading-primary--main {
   color: var(--color-basic-blue);
   display: block;
-  font-size: 12rem;
+  font-size: 11rem;
   letter-spacing: .2rem;
   font-weight: 700;
+  margin-bottom: -.5rem;
   animation: moveInLeft .4s ease-in-out; }
   @media screen and (max-width: 600px) {
     .heading-primary--main {
@@ -106,7 +108,7 @@ body {
   color: var(--color-basic-blue);
   display: block;
   font-size: 5rem;
-  letter-spacing: .4rem;
+  letter-spacing: .1rem;
   font-weight: 600;
   animation: moveInBottom .4s ease-in-out; }
   @media screen and (max-width: 600px) {
@@ -121,7 +123,7 @@ body {
 
 .heading-secondary {
   display: inline-block;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
   color: var(--color-basic-blue); }
   .heading-secondary--margin-small {
@@ -130,9 +132,10 @@ body {
     margin-bottom: 10rem; }
 
 .heading-tertiary {
-  color: var(--color-gray-dark);
+  color: var(--color-basic-blue);
   font-size: 3rem;
   font-weight: 300;
+  margin-top: 1.5rem;
   margin-bottom: 1rem; }
 
 @media screen and (max-width: 1300px) {
@@ -549,8 +552,7 @@ body {
     .carousel-control-prev {
       display: none; } }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
   height: 100px;
   width: 100px;
   background-size: 100%, 100%;
@@ -565,3 +567,7 @@ body {
   content: '>';
   font-size: 5rem;
   color: black; }
+
+.carousel-image {
+  border: 1px solid black;
+  border-radius: 3px; }

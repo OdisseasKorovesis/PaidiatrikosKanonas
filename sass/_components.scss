@@ -4,9 +4,10 @@
     &--main {
         color: var(--color-basic-blue);
         display: block;
-        font-size: 12rem;
+        font-size: 11rem;
         letter-spacing: .2rem;
         font-weight: 700;
+        margin-bottom: -.5rem;
 
         animation: moveInLeft .4s ease-in-out;
 
@@ -25,7 +26,7 @@
         color: var(--color-basic-blue);
         display: block;
         font-size: 5rem;
-        letter-spacing: .4rem;
+        letter-spacing: .1rem;
         font-weight: 600;
 
         animation: moveInBottom .4s ease-in-out;
@@ -46,7 +47,7 @@
 
 .heading-secondary {    
     display: inline-block;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: var(--color-basic-blue);    
     
@@ -61,10 +62,11 @@
 }
 
 .heading-tertiary {
-    color: var(--color-gray-dark);    
+    color: var(--color-basic-blue);    
     font-size: 3rem;
     font-weight: 300;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;    
 }
 
 .info {
@@ -642,39 +644,50 @@
         }
     }
 
-.carousel-control-next {
-    right: -10rem;
 
-    @media screen and (max-width: 768px) {
-        display: none;  
+.carousel {
+
+    &-control-next {
+        right: -10rem;
+    
+        @media screen and (max-width: 768px) {
+            display: none;  
+        }
     }
-}
-
-.carousel-control-prev {
-    left: -10rem;
-
-    @media screen and (max-width: 768px) {
-       display: none;        
+    
+    &-control-prev {
+        left: -10rem;
+    
+        @media screen and (max-width: 768px) {
+           display: none;        
+        }
     }
-}
+    
+    &-control-prev-icon,
+    &-control-next-icon {
+      height: 100px;
+      width: 100px;  
+      background-size: 100%, 100%;  
+      background-image: none;
+    }
+    
+    &-control-prev-icon:after {
+      content: '<';
+      font-size: 5rem;
+      color: black;
+    }
+    
+    &-control-next-icon:after {
+        content: '>';
+        font-size: 5rem;
+        color: black;
+      }     
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;  
-  background-size: 100%, 100%;  
-  background-image: none;
-}
+      &-image {
+          border: 1px solid black;
+          border-radius: 3px;
+          
+        }
+}    
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 5rem;
-  color: black;
-}
-
-.carousel-control-next-icon:after {
-    content: '>';
-    font-size: 5rem;
-    color: black;
-  }
 
