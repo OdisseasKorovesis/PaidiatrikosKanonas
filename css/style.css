@@ -248,7 +248,8 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
   transition: all .4s; }
   .creators__box:hover {
-    transform: translateY(-2rem) scale(1.1); }
+    transform: translateY(-2rem) scale(1.1);
+    background-color: white; }
 
 .creators__img-box {
   height: 20rem;
@@ -261,14 +262,11 @@ body {
   width: auto; }
 
 .creators__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700; }
-  .creators__title--long {
-    font-size: 1.8rem;
-    font-weight: 700; }
 
 .creators__text {
-  font-size: 1.5rem; }
+  font-size: 1rem; }
 
 .creators__button:link, .creators__button:visited {
   font-size: 1.4rem;
@@ -571,3 +569,14 @@ body {
 .carousel-image {
   border: 1px solid black;
   border-radius: 3px; }
+
+.sponsors-img {
+  cursor: pointer;
+  height: 15vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .sponsors-img--1 {
+    background-image: url("../img/Logo-Pantone-Medical-New.jpg"); }
+  .sponsors-img--2 {
+    background-image: url("../img/LOGO_tfx-corp-clr-300.png"); }
