@@ -447,6 +447,15 @@ body {
     display: inline-block;
     transform: translateX(0.5rem);
     border-bottom: 1px solid #fff; }
+  .footer-img_container {
+    cursor: pointer; }
+  .footer-img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down; }
+    @media screen and (max-width: 768px) {
+      .footer-img {
+        width: 70%; } }
 
 .popup {
   height: 100vh;

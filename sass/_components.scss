@@ -529,6 +529,27 @@
         transform: translateX(.5rem);
         border-bottom: 1px solid #fff;
     }
+
+    &-img_container {
+
+        cursor: pointer;
+        // height: 18vh;
+        // background-position: center;
+        // background-size: 100%;
+        // background-repeat: no-repeat;
+        // background-image: url("../img/logo_pantone_Greek_Pedtravma.png");
+    }
+
+    &-img {
+
+        width: 100%;
+        height: auto;
+        object-fit:scale-down;
+
+        @media screen and (max-width: 768px) {
+            width: 70%;        
+         }
+    }
 }
 
 

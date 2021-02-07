@@ -32,10 +32,14 @@ window.onload = function () {
 window.onload = function () {
   let sponsorDiv1 = document.querySelector('.sponsors-img--1');
   let sponsorDiv2 = document.querySelector('.sponsors-img--2');
+  let footerImgDiv = document.querySelector('.footer-img_container')
   sponsorDiv1.addEventListener('click', function() {
     window.location.href = "http://www.medical.gr";
   });
   sponsorDiv2.addEventListener('click', function() {
     window.location.href = "http://www.arrowezio.com";
+  })
+  footerImgDiv.addEventListener('click', function() {
+    window.location.href = "https://pedtrauma.gr";
   })
 }
